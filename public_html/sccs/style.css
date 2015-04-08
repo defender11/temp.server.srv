@@ -1,0 +1,250 @@
+/*  SYSTEM CONFIG */
+@import url(font.css);
+/*VARIABLES */
+/*--MIXIN */
+.clear {
+  clear: both;
+  display: block;
+  float: none; }
+
+/*  SYSTEM CONFIG */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f1f1f1; }
+
+.bgNone {
+  background: none !important; }
+
+.box {
+  display: block;
+  position: relative;
+  width: 1000px;
+  margin: 0 auto; }
+
+.header {
+  display: block;
+  position: relative;
+  width: 1000px;
+  height: 274px;
+  background: url("../img/headerBg.jpg") no-repeat;
+  margin: 0 auto; }
+  .headerMenu {
+    display: block;
+    position: relative;
+    list-style-type: none;
+    margin-left: 155px;
+    padding-top: 14px;
+    overflow: hidden; }
+    .headerMenu li {
+      display: block;
+      position: relative;
+      float: left;
+      background: url("../img/headerMenuLine.png") repeat-x;
+      height: 26px; }
+    .headerMenu li:first-child {
+      background: none; }
+    .headerMenu li:last-child {
+      background: none; }
+    .headerMenu a {
+      font-weight: normal;
+      font-size: 14px;
+      font--family: georgiaRegular;
+      text-decoration: none;
+      color: #fff;
+      padding: 4px 20px 4px 18px;
+      display: block;
+      background: url("../img/headerMenuDevide.png") right 0px no-repeat;
+      text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+      -webkit-text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+      -moz-text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6); }
+
+.headerLogo {
+  display: block;
+  position: absolute;
+  margin-top: 38px;
+  left: 141px; }
+
+.search {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .searchForm {
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 5px; }
+  .searchInput {
+    display: block;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    width: 153px;
+    height: 21px;
+    padding-left: 6px;
+    font-weight: normal;
+    font-size: 12px;
+    font--family: georgiaRegular;
+    text-decoration: none;
+    color: #404040;
+    -webkit-box-shadow: inset 0 1px 2px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 1px 2px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 2px 0px rgba(0, 0, 0, 0.4); }
+  .searchBtn {
+    display: block;
+    position: absolute;
+    border: none;
+    width: 12px;
+    cursor: pointer;
+    height: 10px;
+    margin: -15px 0px 0px 141px;
+    background: url("../img/search.png") center center no-repeat; }
+
+.center {
+  margin-top: 40px;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .centerLeft {
+    display: block;
+    position: relative;
+    width: 283px;
+    float: left;
+    margin-right: 9px; }
+    .centerLeftMenu {
+      display: block;
+      position: relative;
+      padding-left: 62px; }
+      .centerLeftMenu li {
+        list-style-image: url("../img/menuICO.png");
+        margin-bottom: 13px;
+        line-height: 18px; }
+        .centerLeftMenu li a {
+          font-weight: normal;
+          font-size: 16px;
+          font--family: georgiaRegular;
+          text-decoration: none;
+          color: #666; }
+          .centerLeftMenu li a:hover {
+            color: #c4a367; }
+    .centerLeftShow {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin-top: 50px;
+      margin-left: -14px; }
+      .centerLeftShowBlockNews {
+        display: block;
+        position: relative;
+        margin-left: 35px;
+        margin-top: 14px;
+        width: 250px; }
+        .centerLeftShowBlockNewsDate {
+          display: block;
+          position: relative;
+          font-weight: normal;
+          font-size: 11px;
+          font--family: Arial;
+          text-decoration: none;
+          color: #a1895d; }
+        .centerLeftShowBlockNewsHeader {
+          display: block;
+          position: relative;
+          font-weight: bold;
+          font-size: 12px;
+          font--family: Arial;
+          text-decoration: none;
+          color: #037449;
+          line-height: 18px; }
+        .centerLeftShowBlockNewsText {
+          display: block;
+          position: relative;
+          font-weight: normal;
+          font-size: 12px;
+          font--family: Arial;
+          text-decoration: none;
+          color: #666;
+          text-align: left;
+          line-height: 18px; }
+      .centerLeftShowNews {
+        display: block;
+        position: relative; }
+        .centerLeftShowNewsMore {
+          margin-right: 12px !important;
+          margin-top: 0px !important; }
+        .centerLeftShowNewsLine {
+          display: block;
+          position: relative;
+          margin: 7px 21px auto; }
+      .centerLeftShowText, .centerLeftShowTextNews {
+        display: block;
+        position: relative;
+        font-weight: normal;
+        font-size: 20px;
+        font--family: georgiaRegular;
+        text-decoration: none;
+        color: #037449;
+        padding-left: 40px; }
+        .centerLeftShowTextNews {
+          padding-left: 71px;
+          margin-top: 17px; }
+      .centerLeftShowVideo {
+        width: 244px;
+        height: 159px;
+        margin: 15px 0px 0px 31px;
+        background: url("../img/menuShowVideo.png") center center no-repeat; }
+        .centerLeftShowVideoMore, .centerLeftShowNewsMore {
+          text-align: right;
+          display: block;
+          position: relative;
+          font-weight: normal;
+          font-size: 11px;
+          font--family: georgiaRegular;
+          text-decoration: underline;
+          color: #037449;
+          background: url("../img/arrRight.png") right center no-repeat;
+          padding-right: 16px;
+          margin-top: 10px;
+          margin-right: 26px; }
+        .centerLeftShowVideo iframe {
+          margin-left: 6px;
+          margin-top: 6px; }
+
+.centerRight {
+  display: block;
+  position: relative;
+  width: 670px;
+  margin-left: 19px;
+  float: left; }
+  .centerRightSlider {
+    width: 670px;
+    height: 202px;
+    background: url("../img/slide1.png") center center no-repeat;
+    overflow: hidden; }
+  .centerRightBox {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 31px; }
+    .centerRightBoxHeader {
+      font-weight: normal;
+      font-size: 20px;
+      font--family: georgiaRegular;
+      text-decoration: none;
+      color: #037449;
+      text-align: left;
+      display: block;
+      position: relative; }
+    .centerRightBoxText {
+      font-weight: normal;
+      font-size: 12px;
+      font--family: Arial;
+      text-decoration: none;
+      color: #666;
+      display: block;
+      position: relative;
+      margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */

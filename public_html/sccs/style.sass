@@ -1,0 +1,296 @@
+/*  SYSTEM CONFIG */
+@import font.css
+
+/*VARIABLES*/
+$bgCol: #f1f1f1
+
+$marginAll: 0
+$paddingAll: 0
+$w1000: 1000px
+
+/*--MIXIN*/
+
+@mixin clear()
+   clear: both
+   display: block
+   float: none
+
+.clear
+   @include clear()
+
+@mixin contur()
+   display: block
+   position: relative
+
+@mixin mrgT($mT)
+   margin-top: $mT
+
+@mixin conturAbs()
+   display: block
+   position: absolute
+
+@mixin font-family($size, $bold, $underline, $col, $ff)
+   font: $bold $size $ff
+   text-decoration: $underline
+   color: $col
+/*  SYSTEM CONFIG */
+*
+   margin: $marginAll
+   padding: $paddingAll
+
+body
+   background-color: $bgCol
+
+.bgNone
+   background: none!important
+
+.box
+   @include contur()
+   width: $w1000
+   margin: 0 auto
+
+.mTop
+   @include mrgT(64px!important)
+
+.header
+   @include contur()
+   width: $w1000
+   height: 274px
+   background: url('../img/headerBg.jpg') no-repeat
+   margin: 0 auto
+
+   &Menu
+      @include contur()
+      list-style-type: none
+      margin-left: 155px
+      padding-top: 14px
+      overflow: hidden
+
+
+      li
+         @include contur()
+         float: left
+         background: url('../img/headerMenuLine.png') repeat-x
+         height: 26px
+
+      li:first-child
+         background: none
+
+      li:last-child
+         background: none
+
+      a
+         @include font-family(14px, normal, none, #fff, georgiaRegular)
+         padding: 4px 20px 4px 18px
+         display: block
+         background: url('../img/headerMenuDevide.png') right 0px no-repeat
+         text-shadow: 0px 0px 2px rgba(0,0,0,.6)
+         -webkit-text-shadow: 0px 0px 2px rgba(0,0,0,.6)
+         -moz-text-shadow: 0px 0px 2px rgba(0,0,0,.6)
+
+.headerLogo
+   @include conturAbs()
+   margin-top: 38px
+   left: 141px
+
+.search
+   @include contur()
+   overflow: hidden
+
+   &Form
+      @include contur()
+      float: right
+      margin-right: 5px
+
+   &Input
+      @include contur()
+      border: none
+      border-radius: 5px
+      width: 153px
+      height: 21px
+      padding-left: 6px
+      @include font-family(12px, normal, none, #404040, georgiaRegular)
+      -webkit-box-shadow: inset 0 1px 2px 0px rgba(0,0,0,.4)
+      -moz-box-shadow: inset 0 1px 2px 0px rgba(0,0,0,.4)
+      box-shadow: inset 0 1px 2px 0px rgba(0,0,0,.4)
+
+   &Btn
+      @include conturAbs()
+      border: none
+      width: 12px
+      cursor: pointer
+      height: 10px
+      margin: -15px 0px 0px 141px
+      background: url('../img/search.png') center center no-repeat
+
+.center
+   margin-top: 40px
+   @include contur()
+   overflow: hidden
+
+   &Left
+      @include contur()
+      width: 283px
+      float: left
+      margin-right: 9px
+
+      &Menu
+         @include contur()
+         padding-left: 62px
+
+         li
+            list-style-image: url('../img/menuICO.png')
+            margin-bottom: 13px
+            line-height: 18px
+
+            a
+               @include font-family(16px, normal, none, #666, georgiaRegular)
+
+               &:hover
+                  color: #c4a367
+
+      &Show
+         @include contur()
+         overflow: hidden
+         margin-top: 50px
+         margin-left: -14px
+         padding-bottom: 32px
+
+         &BlockNews
+            @include contur()
+            margin-left: 35px
+            margin-top: 14px
+            width: 250px
+            margin-bottom: -11px
+
+            &Date
+               @include contur()
+               @include font-family(11px, normal, none, #a1895d, Arial)
+
+            &Header
+               @include contur()
+               @include font-family(12px, bold, none, #037449, Arial)
+               line-height: 18px
+
+            &Text
+               @include contur()
+               @include font-family(12px, normal, none, #666, Arial)
+               text-align: left
+               line-height: 18px
+
+         &News
+            @include contur()
+
+            &More
+               @extend .centerLeftShowVideoMore
+               margin-right: 12px!important
+               margin-top: 0px!important
+
+            &Line
+               @include contur()
+               margin: 7px 21px auto
+
+         &Text
+            @include contur()
+            @include font-family(20px, normal, none, #037449, georgiaRegular)
+            padding-left: 40px
+
+            &News
+               @extend .centerLeftShowText
+               padding-left: 71px
+               margin-top: 17px
+
+         &Video
+            width: 244px
+            height: 159px
+            margin: 15px 0px 0px 31px
+            background: url('../img/menuShowVideo.png') center center no-repeat
+
+            &More
+               text-align: right
+               @include contur()
+               @include font-family(11px, normal, underline, #037449, georgiaRegular)
+               background: url('../img/arrRight.png') right center no-repeat
+               padding-right: 16px
+               margin-top: 10px
+               margin-right: 26px
+
+
+            iframe
+               margin-left: 6px
+               margin-top: 6px
+
+.centerRight
+   @include contur()
+   width: 670px
+   margin-left: 19px
+   float: left
+
+   &Slider
+      width: 670px
+      height: 202px
+      background: url('../img/slide1.png') center center no-repeat
+      overflow: hidden
+
+   &Box
+      @include contur()
+      overflow: hidden
+      margin-top: 31px
+
+      &Header
+         @include font-family(20px, normal, none, #037449, georgiaRegular)
+         text-align: left
+         @include contur()
+         margin-top: -4px
+         letter-spacing: 0.01em
+
+      &Text
+         @include font-family(12px, normal, none, #666, Arial)
+         @include contur()
+         margin-bottom: 20px
+         margin-top: 16px
+         margin-left: 4px
+         line-height: 16px
+
+      &Partners
+         @include contur()
+         @include mrgT(10px)
+
+.footer
+   @include contur()
+   width: 1000px
+
+   &Box
+      width: 960px
+      height: 66px
+      margin: 0 auto
+      background: url('../img/footerBG.png') repeat-x
+      margin-top: 5px
+      @include contur()
+
+      &Left
+         @include contur()
+         float: left
+         width: 480px
+
+         p
+            @include font-family(12px, normal, none, #ffffff, Arial)
+            padding-top: 19px
+            padding-left: 19px
+            line-height: 1px
+            letter-spacing: -0.01em
+
+      &Right
+         @include contur()
+         float: left
+         width: 480px
+
+         p
+            @include font-family(12px, normal, none, #ffffff, Arial)
+            padding-top: 5px
+            padding-left: 39px
+            line-height: 13px
+            letter-spacing: -0.01em
+
+            a
+               @include font-family(12px, normal, underline, #0eb3dc, Arial)
