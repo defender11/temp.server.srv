@@ -162,6 +162,11 @@ body
             margin-top: 14px
             width: 250px
             margin-bottom: -11px
+            background: url('../img/menuNewsLine.png') 21px 142px no-repeat
+            padding-bottom: 22px
+
+            &:last-child
+               background: none!important
 
             &Date
                @include contur()
@@ -177,6 +182,9 @@ body
                @include font-family(12px, normal, none, #666, Arial)
                text-align: left
                line-height: 18px
+
+               &:after
+                  content: "... "
 
          &News
             @include contur()
@@ -294,3 +302,4 @@ body
 
             a
                @include font-family(12px, normal, underline, #0eb3dc, Arial)
+
