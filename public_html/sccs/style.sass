@@ -8,6 +8,31 @@ $marginAll: 0
 $paddingAll: 0
 $w1000: 1000px
 
+
+.mrgTop6
+   margin-top: 6px
+
+.mrgTop8
+   margin-top: 8px
+
+.mrgTop9
+   margin-top: 9px
+
+.mrgTop10
+   margin-top: 10px
+
+.mrgTop16
+   margin-top: 16px
+
+.mrgTop20
+   margin-top: 20px
+
+.mrgTop26
+   margin-top: 26px
+
+.mrgTop35
+   margin-top: 35px!important
+
 /*--MIXIN*/
 
 @mixin clear()
@@ -26,7 +51,7 @@ $w1000: 1000px
    margin-top: $mT
 
 @mixin conturAbs()
-   display: block
+   display: blockop
    position: absolute
 
 @mixin font-family($size, $bold, $underline, $col, $ff)
@@ -102,6 +127,12 @@ body
       float: right
       margin-right: 5px
 
+   &Form2
+      @include contur()
+      float: right
+      margin-right: 5px
+      margin-top: 167px
+
    &Input
       @include contur()
       border: none
@@ -122,6 +153,11 @@ body
       height: 10px
       margin: -15px 0px 0px 141px
       background: url('../img/search.png') center center no-repeat
+
+
+.center2
+   @extend .center
+   margin-top: 20px!important
 
 .center
    margin-top: 40px
@@ -252,6 +288,10 @@ body
          margin-top: -4px
          letter-spacing: 0.01em
 
+      &News
+         @extend .centerRightBox
+         margin-top: 0px!important
+
       &Text
          @include font-family(12px, normal, none, #666, Arial)
          @include contur()
@@ -303,3 +343,69 @@ body
             a
                @include font-family(12px, normal, underline, #0eb3dc, Arial)
 
+/*  NEWS PAGE */
+
+.centerRigthtBoxHeaderNewsBlock
+   @include contur()
+   overflow: hidden
+   width: 638px
+   margin-top: 11px
+
+   li
+      list-style: none
+      border-top: 1px solid #999
+
+      a
+         @include contur()
+         overflow: hidden
+         @include font-family(11px, normal, underline, #049fef, Arial)
+         margin-left: 570px
+         margin-bottom: 7px
+         background: url("../img/arrRightLink.png") no-repeat scroll right center transparent
+
+   &:last-child
+      border-bottom: 1px solid #999
+
+.centerRightShowBlockNewsDate
+   @include font-family(11px, normal, none, #a1895d, Arial)
+   @include contur()
+   margin-top: 13px
+   margin-left: 3px
+
+.centerRightShowBlockNewsHeader
+   @include contur()
+   @include font-family(12px, bold, none, #037449, Arial)
+   line-height: 18px
+   margin-top: 1px
+   margin-left: 2px
+
+.centerRightShowBlockNewsText
+   @include contur()
+   @include font-family(12px, normal, none, #666, Arial)
+   text-align: left
+   line-height: 18px
+   margin-top: 1px
+   margin-left: 2px
+
+   &:after
+      content: "... "
+
+/*  CONTACT PAGE */
+
+.centerRightBoxContact
+   @include contur()
+   overflow: hidden
+
+   &TextGrey
+      @include font-family(12px, normal, none, #666, Arial)
+
+   &TextGreen
+      @include font-family(16px, normal, none, #037449, Arial)
+
+   &TextGreen2
+      @include font-family(12px, normal, none, #037449, Arial)
+
+.centerRightBoxNewsMps
+   @include contur()
+   @include font-family(12px, normal, underline, #0072ff, Arial)
+   mrgTop: 9px
