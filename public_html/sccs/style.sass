@@ -8,6 +8,15 @@ $marginAll: 0
 $paddingAll: 0
 $w1000: 1000px
 
+.hack1
+   margin-top: 37px!important
+   margin-left: 9px
+
+.mrgTop2
+   margin-top: 2px
+
+.mrgTop4
+   margin-top: 4px
 
 .mrgTop6
    margin-top: 6px
@@ -51,7 +60,7 @@ $w1000: 1000px
    margin-top: $mT
 
 @mixin conturAbs()
-   display: blockop
+   display: block
    position: absolute
 
 @mixin font-family($size, $bold, $underline, $col, $ff)
@@ -261,7 +270,7 @@ body
 
 
             iframe
-               margin-left: 6px
+               margin-left: 7px
                margin-top: 6px
 
 .centerRight
@@ -408,4 +417,136 @@ body
 .centerRightBoxNewsMps
    @include contur()
    @include font-family(12px, normal, underline, #0072ff, Arial)
-   mrgTop: 9px
+
+   /*  CONTACT PAGE  */
+
+
+.contactForm
+   @include contur()
+
+   &Left
+      @include contur()
+      float: left
+      width: 295px
+      padding: 6px
+
+
+      label
+         @include contur()
+         @include font-family(12px, normal, none, #666, Arial)
+         margin-top: 18px
+
+      input[type="text"]
+         width: 244px
+         border: 1px solid #b2c4d4
+         border-radius: 3px
+         padding: 7px
+         margin-top: 12px
+         margin-bottom: 4px
+
+   &Right
+      @include contur()
+      float: left
+      width: 345px
+
+
+      label
+         @include contur()
+         padding-top: 25px
+         @include font-family(12px, normal, none, #666, Arial)
+
+      textarea
+         width: 327px
+         border: 1px solid #b2c4d4
+         border-radius: 3px
+         padding: 5px
+         margin-top: 11px
+         height: 181px
+         overflow: hidden
+
+   &Btn
+      @include contur()
+      @include font-family(16px, bold, none, #fff, georgiaRegular)
+      background: #04a165 /* Old browsers */
+      background: -moz-linear-gradient(top, #04a165 0%, #02482d 100%) /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#04a165), color-stop(100%,#02482d)) /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #04a165 0%,#02482d 100%) /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #04a165 0%,#02482d 100%) /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #04a165 0%,#02482d 100%) /* IE10+ */
+      background: linear-gradient(to bottom, #04a165 0%,#02482d 100%) /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04a165', endColorstr='#02482d',GradientType=0 ) /* IE6-9 */
+      margin: 25px 0px 0px 6px
+      width: 162px
+      height: 43px
+      text-align: center
+      border-radius: 7px
+      border: 1px solid rgb(110, 153, 133)
+      box-shadow: 0px 0px 1px 2px rgba(110, 153, 133, 0.3)
+      -webkit-box-shadow: 0px 0px 1px 2px rgba(110, 153, 133, 0.3)
+      -moz-box-shadow: 0px 0px 1px 2px rgba(110, 153, 133, 0.3)
+      -ms-box-shadow: 0px 0px 1px 2px rgba(110, 153, 133, 0.3)
+      -o-box-shadow: 0px 0px 1px 2px rgba(110, 153, 133, 0.3)
+      text-shadow: 0px 0px 2px rgba(0,0,0,.6)
+      -webkit-text-shadow: 0px 0px 2px rgba(0,0,0,.6)
+      -moz-text-shadow: 0px 0px 2px rgba(0,0,0,.6)
+      cursor: pointer
+      letter-spacing: 0.02em
+
+.contactFormCheck
+   width: 10px!important
+   margin-left: 62px
+   cursor: pointer
+   border: 1px solid #b2c4d4!important
+
+.contactForm label span
+   @include conturAbs()
+   margin-top: -16px
+   margin-left: 119px
+   @include font-family(11px, normal, none, #049fef, Arial)
+
+.centerRightBoxComm
+   @include contur()
+   overflow: hidden
+   width: 635px
+
+.centerRightBoxComments
+   @include contur()
+   list-style-type: none
+   overflow: hidden
+   border-top: 1px solid #999
+   width: 635px
+   margin-top: 24px
+   margin-left: 6px
+   padding-left: 2px
+
+   &:last-child
+      border-bottom: 1px solid #999
+      padding-bottom: 10px
+
+   &Header
+      @include contur()
+      overflow: hidden
+      margin-top: 9px
+
+      &Name
+         float: left
+         width: 200px
+         text-align: left
+         @include font-family(12px, bold, none, #037449, Arial)
+
+      &Date
+         float: right
+         width: 300px
+         text-align: right
+         @include font-family(12px, normal, none, #999, Arial)
+
+   &Text
+      @include contur()
+      @include font-family(12px, normal, none, #666, Arial)
+      margin-top: 11px
+
+   &Link
+      @include contur()
+      @include font-family(11px, normal, underline, #049fef, Arial)
+      margin-top: 11px
+      margin-left: 3px

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Контакты</title>
+        <title>Отзывы</title>
 
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/jquery190.min.js" typr="text/javascript"></script>
@@ -72,38 +72,54 @@
                 </div>
                 <div class="centerRight">
                     <div class="centerRightBoxNews">
-                            <p class="centerRightBoxHeader">Контакты</p>
-                            <p class="centerRightBoxContact mrgTop20">
-                                <span class="centerRightBoxContactTextGrey">Частное предприятие </span>
-                                <span class="centerRightBoxContactTextGreen">«КрымЕвроСервис».</span>
-                            </p>
-                            <p class="centerRightBoxContact mrgTop6">
-                                <span class="centerRightBoxContactTextGrey">95053 г. Симферополь, ул. Гаспринского,5</span>
-                            </p>
-                            <p class="centerRightBoxContact mrgTop8">
-                                <span class="centerRightBoxContactTextGrey">Тел. раб.: (0652)</span>
-                                <span class="centerRightBoxContactTextGreen"> 534-102; 534-103</span>
-                            </p>
-                            <p class="centerRightBoxContact mrgTop26">
-                                <span class="centerRightBoxContactTextGreen2">Юридические услуги: </span><span class="centerRightBoxContactTextGrey">Кошман Елена Александровна
-                            </span>
-                            </p>
-                            <p class="centerRightBoxContact mrgTop9">
-                                <span class="centerRightBoxContactTextGreen2">Бухгалтерские услуги: </span>
-                                <span class="centerRightBoxContactTextGrey">Куприянова Елена Георгиевна</span>
-                            </p>
-                            <p class="centerRightBoxContact mrgTop10">
-                                <span class="centerRightBoxContactTextGreen2">Наружная реклама: </span>
-                                <span class="centerRightBoxContactTextGrey">Яковлев Роман Евгеньевич</span>
-                            </p>
-                            <p class="centerRightBoxContact mrgTop9">
-                                <span class="centerRightBoxContactTextGreen2">Операции с недвижимостью: </span>
-                                <span class="centerRightBoxContactTextGrey">Медяник Юлия Александровна, Яковлев Роман Евгеньевич</span>
-                            </p>
-                            <p class="centerRightBoxHeader mrgTop35">Карта проезда</p>
+                            <p class="centerRightBoxHeader">Напишите Ваш отзыв</p>
 
-                            <img src="img/maps.jpg"  class="mrgTop16" width="665" height="388" alt="">
-                            <a href="#" class="centerRightBoxNewsMps mrgTop9">Отрыть в Google Maps</a>
+                            <form action="#" method="post" class="contactForm">
+                                <div class="contactFormLeft">
+                                    <label>Имя:</label>
+                                    <input type="text" name="name">
+                                    <label>Email: <input type="checkbox" name="check" value="check" class="contactFormCheck"><span>Уведомлять об ответах</span></label>
+                                    <input type="text" name="mail">
+                                    <label>Город:</label>
+                                    <input type="text" name="city">
+                                </div>
+                                <div class="contactFormRight">
+                                    <label>Отзыв:</label>
+                                    <textarea name="" id="" cols="30" rows="10" name="comments"></textarea>
+                                </div>
+                                <div class="clear"></div>
+                                <input type="submit" value="Оставить отзыв" class="contactFormBtn" name="btn" />
+                            </form>
+                            <p class="centerRightBoxHeader hack1">Все отзывы</p>
+                            <ul class="centerRightBoxComm">
+                                <li class="centerRightBoxComments">
+                                    <p class="centerRightBoxCommentsHeader">
+                                        <span class="centerRightBoxCommentsHeaderName">Николай</span>
+                                        <span class="centerRightBoxCommentsHeaderDate">Оставлен 15 сентября 2011</span>
+                                    </p>
+                                    <div class="clear"></div>
+                                    <p class="centerRightBoxCommentsText">Отличная фирма. Сервис просто сногшибательный! Буду обращаться еще!</p>
+                                    <a href="#" class="centerRightBoxCommentsLink">Ответить</a>
+                                </li>
+                                <li class="centerRightBoxComments">
+                                    <p class="centerRightBoxCommentsHeader">
+                                        <span class="centerRightBoxCommentsHeaderName">Николай</span>
+                                        <span class="centerRightBoxCommentsHeaderDate">Оставлен 15 сентября 2011</span>
+                                    </p>
+                                    <div class="clear"></div>
+                                    <p class="centerRightBoxCommentsText">Отличная фирма. Сервис просто сногшибательный! Буду обращаться еще!</p>
+                                    <a href="#" class="centerRightBoxCommentsLink">Ответить</a>
+                                </li>
+                                <li class="centerRightBoxComments">
+                                    <p class="centerRightBoxCommentsHeader">
+                                        <span class="centerRightBoxCommentsHeaderName">Николай</span>
+                                        <span class="centerRightBoxCommentsHeaderDate">Оставлен 15 сентября 2011</span>
+                                    </p>
+                                    <div class="clear"></div>
+                                    <p class="centerRightBoxCommentsText">Отличная фирма. Сервис просто сногшибательный! Буду обращаться еще!</p>
+                                    <a href="#" class="centerRightBoxCommentsLink">Ответить</a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </div>
